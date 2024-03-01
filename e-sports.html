@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="valorant.css"/>
+    <script src="script.js"></script>
+    <style>
+        .zoom-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+<h1>E-Sports: Campeonatos Internacionais e Nacionais</h1>
+<div class="box">
+    <div class="container">
+        <p> Os e-sports, ou esportes eletrônicos, têm ganhado cada vez mais destaque no cenário global. Com competições que atraem milhões de espectadores e premiações que podem chegar a milhões de dólares, os e-sports estão rapidamente se tornando uma parte importante da cultura pop. Existem muitos campeonatos de e-sports, tanto em nível nacional quanto internacional. Alguns dos mais conhecidos incluem a League of Legends World Championship, o International Dota 2 Championship e o Fortnite World Cup. No Brasil, temos campeonatos como o CBLoL (Campeonato Brasileiro de League of Legends) e a Brasil Game Cup. Os e-sports estão apenas começando a mostrar seu potencial. Com o contínuo crescimento e desenvolvimento da indústria, podemos esperar ver ainda mais competições emocionantes e inovadoras no futuro.
+
+        </p>
+    </div>
+</div>
+<footer>&copy; 2024 E-Sports Company</footer>
+
+<div class="zoom-buttons">
+    <button onclick="zoomIn()">Aumentar</button>
+    <button onclick="zoomOut()">Diminuir</button>
+</div>
+
+<script>
+    function zoomIn() {
+        var paragraphs = document.getElementsByTagName('p');
+        for (var i = 0; i < paragraphs.length; i++) {
+            var currentFontSize = parseFloat(window.getComputedStyle(paragraphs[i]).fontSize) || 16;
+            paragraphs[i].style.fontSize = (currentFontSize + 1) + 'px';
+        }
+    }
+
+    function zoomOut() {
+        var paragraphs = document.getElementsByTagName('p');
+        for (var i = 0; i < paragraphs.length; i++) {
+            var currentFontSize = parseFloat(window.getComputedStyle(paragraphs[i]).fontSize) || 16;
+            paragraphs[i].style.fontSize = (currentFontSize - 1) + 'px';
+        }
+    }
+</script>
+
+</body>
+</html>  <!-- Inicio do corpo da página -->
+
+    ... <!-- Conteúdo da página -->
+  
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+ <!-- Fim do corpo da página -->
+  
